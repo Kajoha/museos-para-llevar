@@ -1,0 +1,58 @@
+.display__f-s {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 60rem) {
+    .display__f-s {
+      flex-direction: row; } }
+
+.logo {
+  padding-top: 80px; }
+  .logo img {
+    width: 30%;
+    height: auto; }
+  @media (min-width: 60rem) {
+    .logo {
+      width: 65%;
+      height: auto; } }
+
+@media (min-width: 60rem) {
+  .section__colum {
+    width: 50%; } }
+
+@media (min-width: 60rem) {
+  .section__colum--sticky {
+    position: sticky;
+    top: 5rem; } }
+
+.section__colum--border-top {
+  margin-top: 80px;
+  border-radius: 50% 50% 0 0; }
+  @media (min-width: 60rem) {
+    .section__colum--border-top {
+      margin-top: 150px; } }
+
+.section__colum--border-bottom {
+  margin-bottom: 150px;
+  border-radius: 0 0 50% 50%; }
+
+@media (min-width: 60rem) {
+  .section__relle {
+    width: 150px;
+    height: 150px; } }
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section__content img {
+    height: auto;
+    width: 80%; }
+
+.wrapper__inter {
+  padding: 3%; }
+
+.bg-img-museo {
+  background-image: url(./../../img/museo-nacional-grabacion.svg);
+  background-size: cover;
+  background-repeat: no-repeat; }
