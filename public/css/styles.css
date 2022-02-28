@@ -54,7 +54,8 @@ h3 {
       font-size: 4rem; } }
 
 h1, h2 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 900; }
 
 p {
   font-size: 1.4rem;
@@ -94,7 +95,8 @@ li {
   margin: 0 auto; }
 
 .padding-inter-top-bott {
-  padding-bottom: 5rem; }
+  padding-bottom: 12rem;
+  padding-top: 12rem; }
 
 .typo-color-blue {
   color: #0100A3; }
@@ -370,6 +372,9 @@ b:hover {
     .display__f-s {
       flex-direction: row; } }
 
+.img-inter {
+  padding: 5%; }
+
 .logo {
   padding-top: 80px; }
   .logo img {
@@ -386,8 +391,10 @@ b:hover {
 
 @media (min-width: 60rem) {
   .section__colum--sticky {
+    padding-top: 10rem;
+    display: inline-block;
     position: sticky;
-    top: 5rem; } }
+    top: 0rem; } }
 
 .section__colum--border-top {
   margin-top: 80px;
@@ -397,8 +404,11 @@ b:hover {
       margin-top: 150px; } }
 
 .section__colum--border-bottom {
-  margin-bottom: 150px;
-  border-radius: 0 0 50% 50%; }
+  margin-bottom: 200px;
+  border-radius: 0%; }
+  @media (min-width: 60rem) {
+    .section__colum--border-bottom {
+      border-radius: 30% 0% 0% 0%; } }
 
 @media (min-width: 60rem) {
   .section__relle {
@@ -414,9 +424,71 @@ b:hover {
     width: 80%; }
 
 .wrapper__inter {
-  padding: 3%; }
+  padding: 5%; }
 
 .bg-img-museo {
   background-image: url(./../../img/museo-nacional-grabacion.svg);
   background-size: cover;
   background-repeat: no-repeat; }
+
+.bg-img-teatro {
+  background-image: url(./../../img/teatro-nacional-grabaciones.svg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-pop-pink {
+  background-image: url(./../../img/art-pop-pink.svg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-pop-blue {
+  background-image: url(./../../img/art-pop-blue.svg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.link {
+  color: #FFFF; }
+
+.link-container {
+  margin: 0 auto;
+  padding: 1rem; }
+  @media (min-width: 40rem) {
+    .link-container {
+      padding: 1.5rem; } }
+
+.link-container__items {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; }
+  .link-container__items h2 {
+    margin-bottom: 2rem; }
+  .link-container__items a {
+    background-color: #0100A3;
+    border-radius: 2rem 1rem 2rem 1rem;
+    color: #FFFF;
+    font-weight: bold;
+    padding: 1rem; }
+  @media (min-width: 50rem) {
+    .link-container__items {
+      align-items: center;
+      flex-direction: row;
+      gap: 3rem; }
+      .link-container__items h2 {
+        width: 50%; } }
+
+.to-do__title {
+  text-align: center; }
+  .to-do__title h1 {
+    color: #FFFF; }
+  .to-do__title img {
+    width: 30%; }
+  @media (min-width: 50rem) {
+    .to-do__title {
+      width: 100%; } }
+
+.metodologies__text--pink {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #FE95B3;
+  margin: 0; }

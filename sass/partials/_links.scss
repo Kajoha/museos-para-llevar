@@ -1,0 +1,63 @@
+.link{
+    color: $white;
+}
+
+.link-container{
+    margin: 0 auto;
+    padding: 1rem;
+    
+    @media (min-width: 40rem){
+        padding: 1.5rem;
+    }
+}
+
+.link-container__items {
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    h2{
+        margin-bottom: 2rem;
+    }
+    
+    a{
+        background-color: $dark-blue;
+        border-radius: 2rem 1rem 2rem 1rem;
+        color: $white;
+        font-weight: bold;
+        padding: 1rem;
+    }
+    
+    @media (min-width: 50rem){
+        align-items: center;
+        flex-direction: row;
+        gap: 3rem;
+        h2 {
+            width: 50%;
+        }
+        
+    }
+}
+
+.to-do__title {
+    text-align: center;
+    h1 {
+        color: $white;
+    }
+    img {
+        width: 30%;
+    }
+
+    @media (min-width:50rem){
+        width: 100%;
+    }
+}
+
+.metodologies__text--pink {
+    font-size: $typo-l;
+    font-weight: bold;
+    color: $pink;
+    margin: 0;
+}
